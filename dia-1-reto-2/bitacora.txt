@@ -1,0 +1,37 @@
+BITÁCORA - RUEDA LIBRE
+======================
+
+1. PETICIÓN DEL DOCUMENTO (Live Server + DevTools > Network)
+------------------------------------------------------------
+(Confirmar en DevTools: los valores dependen de la carpeta que abra Live Server.)
+
+URL completa : http://127.0.0.1:5500/dia-1-reto-2/index.html
+Protocolo    : http
+Host         : 127.0.0.1 (mi propio computador, "localhost")
+Puerto       : 5500 (puerto por defecto de Live Server)
+Ruta         : /dia-1-reto-2/index.html
+Método       : GET
+Código       : 200 OK -> el servidor encontró el archivo y lo envió.
+
+2. RUTA QUE NO EXISTE
+---------------------
+URL probada  : http://127.0.0.1:5500/promociones.html
+Código       : 404 Not Found
+Significado  : el servidor sí respondió, pero no existe ningún archivo en esa
+               ruta. El error es del lado del cliente (pidió algo que no hay).
+
+¿Qué pasa cuando alguien escribe la dirección del sitio?
+El navegador arma una petición GET con la URL, la envía al servidor (host +
+puerto), el servidor busca el archivo de la ruta y responde con un código de
+estado (200 si lo encontró, 404 si no) y el contenido HTML. El navegador lee
+ese HTML y dibuja la página.
+
+3. ROLES DE HTML, CSS Y JAVASCRIPT EN RUEDA LIBRE
+-------------------------------------------------
+HTML       : estructura y contenido. Ej.: el título "Rueda Libre", la lista de
+             pasos para alquilar y la tabla de tarifas.
+CSS        : presentación visual. Ej.: colores de la marca, tipografía y que la
+             tabla de tarifas se vea bien en el celular.
+JavaScript : comportamiento e interacción. Ej.: calcular el precio de la
+             reserva al elegir tipo de bicicleta y horas, o validar el
+             formulario antes de enviarlo.

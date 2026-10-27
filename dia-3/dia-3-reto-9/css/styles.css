@@ -1,0 +1,30 @@
+:root {
+  --verde-ruta: #1B6B3A;
+  --gris-asfalto: #2B3035;
+  --amarillo-senal: #F2B705;
+  --gris-niebla: #E4E8E3;
+  --color-fondo: #FAFAF7;
+
+  --fuente-titulos: "Montserrat", Arial, sans-serif;
+  --fuente-texto: "Open Sans", Helvetica, sans-serif;
+
+  --esp-xs: 0.5rem;
+  --esp-s: 1rem;
+  --esp-m: 1.5rem;
+  --esp-l: 2.5rem;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  color: var(--gris-asfalto);
+  background-color: var(--color-fondo);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+a {
+  color: var(--verde-ruta);
+}

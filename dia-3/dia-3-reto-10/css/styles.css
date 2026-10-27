@@ -1,0 +1,113 @@
+:root {
+
+  --verde-ruta: #1B6B3A;
+  --gris-asfalto: #2B3035;
+  --amarillo-senal: #F2B705;
+  --gris-niebla: #E4E8E3;
+  --color-fondo: #FAFAF7;
+
+  --fuente-titulos: "Montserrat", Arial, sans-serif;
+  --fuente-texto: "Open Sans", Helvetica, sans-serif;
+
+  --esp-xs: 0.5rem;
+  --esp-s: 1rem;
+  --esp-m: 1.5rem;
+  --esp-l: 2.5rem;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  color: var(--gris-asfalto);
+  background-color: var(--color-fondo);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+a {
+  color: var(--verde-ruta);
+}
+
+a:hover {
+  color: var(--gris-asfalto);
+}
+
+a:focus {
+  outline: 3px solid var(--gris-asfalto);
+  outline-offset: 2px;
+}
+
+#menu a {
+  color: var(--gris-asfalto);
+  text-decoration: none;
+  padding: var(--esp-xs);
+}
+
+#menu a.activo {
+  color: var(--verde-ruta);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#menu a:hover {
+  color: var(--verde-ruta);
+  background-color: var(--gris-niebla);
+  text-decoration: underline;
+}
+
+#menu a:focus {
+  outline: 3px solid var(--verde-ruta);
+  outline-offset: 2px;
+  background-color: var(--gris-niebla);
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--esp-s) var(--esp-m);
+  background-color: var(--verde-ruta);
+  color: var(--color-fondo);
+  border: 2px solid var(--verde-ruta);
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--gris-asfalto);
+  border-color: var(--gris-asfalto);
+  color: var(--color-fondo);
+}
+
+.btn:focus {
+  outline: 3px solid var(--gris-asfalto);
+  outline-offset: 3px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--verde-ruta);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: var(--fuente-texto);
+  font-weight: 600;
+  background-color: var(--verde-ruta);
+  color: var(--color-fondo);
+  border: 2px solid var(--verde-ruta);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--gris-asfalto);
+  border-color: var(--gris-asfalto);
+}
+
+button:focus {
+  outline: 3px solid var(--gris-asfalto);
+  outline-offset: 3px;
+}
